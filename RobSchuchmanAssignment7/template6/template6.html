@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CS 490 Assignment 6 Module 18</title>    
+	    <link   rel ="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+	    <script src="js/jquery-1.9.1.min.js"></script>
+	    <script src="js/jquery.mobile-1.3.0.min.js"></script>                
+    </head>
+
+    <body>
+
+        <div data-role="page" data-theme="d" id="page1">
+
+
+            <div data-role="header" >
+               <h1>Open House</h1>
+               <img src="template6/css/images/ajax-loader.gif" align="right"/>
+            </div><!-- /header -->
+
+
+            <div data-role="content">
+
+               <img src=template6/css/images/smiley.jpg" align="middle"/>
+               <h1 align="center">June 25th, 2013</h1>
+					
+            </div><!-- /content -->
+
+
+            
+	        <div data-role="footer" data-position="fixed"   >
+		       <div data-role="navbar">
+			      <ul>
+				    <li><a href="#" data-icon="home" >Home</a></li>
+				    <li><a href="#" data-icon="info" >Location</a></li>
+				    <li><a href="#" data-icon="info" >Sessions</a></li>
+				    <li><a href="#comments"  data-icon="plus" >Feedback</a></li>
+				    <li><a href="#" data-icon="info" >College Info</a></li>				   
+			      </ul>		
+		      </div>
+	       </div>		
+
+
+        </div><!-- /page -->
+
+
+        <div data-role="page" data-theme="d" id="comments">
+
+
+            <div data-role="header">
+               <h1>Feedback</h1>
+               <img src="template6/css/images/ajax-loader.gif" align="right"/>
+            </div><!-- /header -->
+
+
+            <div data-role="content">
+
+               <p>
+               <div data-role="fieldcontain">
+                  <label for="name">Name:</label>
+                  </p>
+                  <input type="text" name="name" id="name" value=""  data-mini="true"  required />
+            	</div>
+            	<hr/>
+               </p>
+               <p>
+               <div data-role="fieldcontain">
+                  <label for="e-mail">E-mail:</label>
+                  </p>
+                  <input type="text" name="e-mail" id="e-mail" value=""  data-mini="true"  required />
+            	</div>
+            	<hr/>
+               </p>
+                <p>
+               <div data-role="fieldcontain">
+                  <label for="comments">Comments:</label>
+                  </p>
+                <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea> 
+            	</div>
+            	<hr/>
+               </p>
+			<div data-role="fieldcontain">
+				<label for="contact">May we contact you?</label>
+				</p>
+				<select name="slider" id="alerts" data-role="slider">
+					<option value="off">No</option>
+					<option value="on">Yes</option>
+				</select> 
+			<br/>
+			</div>
+			<hr/>
+			 <div  data-role="content">
+                           <form  action="#"  method="post" data-transition="none">
+                                   <input type="submit" value="Send" data-theme="a">
+                          </form>
+             </div>
+			
+            </div><!-- /content -->
+
+
+            
+	        <div data-role="footer" data-position="fixed"   >
+		       <div data-role="navbar">
+			      <ul>
+				    <li><a href="#page1" data-icon="home" >Home</a></li>
+				    <li><a href="#" data-icon="info" >Location</a></li>
+				    <li><a href="#" data-icon="info" >Sessions</a></li>
+				    <li><a href="#comments"  data-icon="plus" >Feedback</a></li>
+				    <li><a href="#" data-icon="info" >College Info</a></li>						   
+			      </ul>		
+		      </div>
+	       </div>		
+
+
+        </div><!-- /page -->
+
+
+
+    </body>
+</html>
+

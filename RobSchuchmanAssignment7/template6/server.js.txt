@@ -1,0 +1,5 @@
+var connect = require('connect');
+
+var srv = connect.createServer( connect.static(_dirname) );
+
+srv.listen(8995);
